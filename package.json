@@ -23,11 +23,12 @@
     "watch": "bsb -make-world -w",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prepare": "npm link bs-platform",
-    "get-schema": "yarn send-introspection-query https://api.graph.cool/simple/v1/cjdgba1jw4ggk0185ig4bhpsn"
+    "get-schema":
+      "yarn send-introspection-query https://api.graph.cool/simple/v1/cjdgba1jw4ggk0185ig4bhpsn"
   },
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.2",
+    "bs-platform": "^3.1.4",
     "graphql_ppx": "^0.2.3",
     "reason-react": "^0.4.1"
   }
