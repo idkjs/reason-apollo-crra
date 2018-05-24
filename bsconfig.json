@@ -1,17 +1,16 @@
 {
-  "name": "react-template",
-  "reason": { "react-jsx": 2 },
-  "sources": ["src", "lib", { "subdirs": true }],
-  "package-specs": [
-    {
-      "module": "commonjs",
-      "in-source": true
-    }
-  ],
-  "suffix": ".bs.js",
-  "namespace": true,
-  "bs-dependencies": ["reason-react", "reason-apollo"],
+  "name": "reason-scripts",
+  "sources": ["src"],
+  "bs-dependencies": ["reason-react", "@glennsl/bs-jest", "reason-apollo"],
+  "reason": {
+    "react-jsx": 2
+  },
   "bsc-flags": ["-bs-super-errors"],
   "refmt": 3,
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
   "ppx-flags": ["graphql_ppx/ppx"]
 }
